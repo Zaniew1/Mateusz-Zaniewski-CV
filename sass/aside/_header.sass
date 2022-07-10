@@ -1,0 +1,31 @@
+.header
+    width: 90%
+    @include flex(center, center, column)
+
+    .header__photo
+        width: 140px
+        height: 140px
+        border-radius: 50%
+        margin: 5% auto
+    .header__name
+        text-align: center
+        font-size: 20px
+        width: 100%
+        color: #fff
+        text-transform: uppercase
+        padding: 0.6rem 0
+        font-family: $font-family
+    .header__proffesion
+        text-align: center
+        font-size: 20px
+        width: 100%
+        color: $third-color
+        text-transform: uppercase
+        padding-bottom: 2rem 
+        font-weight: 500
+        font-family: $font-family
+        &::after
+            border-bottom: 1px solid $font-color
+            content: ""
+            display: block
+            margin-top: 20px

@@ -1,0 +1,35 @@
+.exp
+    @include flex(center,flex-start, column)
+    width: 80%
+    margin: 20px auto 10px auto
+    @include mq(tablet)
+        width: 20%
+    @include mq-land(tablet)
+         @include flex(center,flex-start, row)
+         flex-wrap: wrap
+    .exp__h3
+        @include h3-style
+        color: $base-color
+        @include mq-land(tablet)
+            width: 100%
+    .exp__wrapper
+        margin: 10px $main-margin
+        color: $font-color
+        @include mq-land(tablet)
+            width: 20%
+            flex-grow: 1
+        .exp__date
+            padding: 5px 0
+        .exp__company
+    .exp__wrap
+        margin: 10px $main-margin
+        @include mq-land(tablet)
+            width: 60%
+            flex-grow: 1
+        .exp__job
+            padding: 5px 0
+            font-weight: 700
+            color: $third-color
+        .exp__description
+            color: $font-color
+            font-size: 12px

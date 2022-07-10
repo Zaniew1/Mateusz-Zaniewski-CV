@@ -1,0 +1,27 @@
+.projects
+    @include flex(center,flex-start,column)
+    width: 80%
+    margin: 20px auto 10px auto
+    .projects__h3
+        @include h3-style
+        color: $base-color
+    .projects__wrapper
+        margin: 10px $main-margin
+        text-decoration: none
+        .projects__link
+            display: flex
+            text-decoration: none
+            color: $third-color
+            font-weight: 700
+            margin: 10px 0
+            cursor: pointer
+        .projects__tech
+            font-weight: bold
+            color: $font-color
+            display: flex
+            margin: 0 5px
+        .projects__description
+            color: $font-color
+            font-size: 12px
+            display: flex
+            margin: 0 5px

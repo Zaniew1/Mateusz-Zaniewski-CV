@@ -1,0 +1,60 @@
+.tech
+    width: 80%
+    margin: 20px auto 10px auto 
+    .tech__h3
+        @include h3-style
+        color: $base-color
+    .tech__wrapper
+        .tech__descb
+            margin: 0  10px
+            padding: 10px 0 
+            color: $third-color
+        .tech__acquired
+            @include flex(center,flex-start, row)
+            flex-wrap: wrap
+            list-style-type: none
+
+            .tech__item
+                @include flex(center,center, row)
+                width: 30%
+                padding: 10px 0
+                @include mq(tablet)
+                    width: 25%
+                @include mq-land(tablet)
+                    width: 25%
+                .icon
+                    padding-right: 5px
+                .tech__name
+                    color: $font-color
+        .tech__progressing
+            @include flex(center,center, row)
+            list-style-type: none
+            flex-wrap: wrap
+            .tech__item
+                @include flex(center,center, row)
+                width: 50%
+                padding: 10px 0
+                @include mq(tablet)
+                    width: 20%
+                @include mq-land(tablet)
+                    wisdth: 20%
+                .icon
+                    padding-right: 5px
+                .tech__name
+                    color: $font-color
+        .tech__future
+            @include flex(center,center, row)
+            list-style-type: none
+            
+            .tech__item
+                @include flex(center,center, row)
+                width: 50%
+                padding: 10px 0
+                @include mq(tablet)
+                    width: 20%
+                @include mq-land(tablet)
+                    wisdth: 20%
+                .icon
+                    padding-right: 5px
+                .tech__name
+                    color: $font-color

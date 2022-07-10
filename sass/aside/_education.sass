@@ -1,0 +1,19 @@
+.education
+    width: 100%
+    @include flex(center,center, column)
+    .education__h3
+        @include h3-style
+    .education__wrapper
+        width: 80%
+        margin: 5% auto
+        @include flex(center, flex-start, column)
+        color: $sec-color
+        .education__years
+            color: $third-color
+            margin: 10px $main-margin 5px $main-margin 
+        .education__degree
+            font-weight: 500
+            margin: 5px $main-margin
+        .education__university
+            font-weight: 300
+            margin: 0 $main-margin 5px $main-margin

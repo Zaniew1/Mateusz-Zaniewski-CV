@@ -1,0 +1,33 @@
+.interest
+    width: 80%
+    margin: 20px auto 50px auto 
+    @include flex(center,flex-start,column)
+    .interest__h3
+        @include h3-style
+        color: $base-color
+    .interest__wrapper
+        @include flex(center,center,row)
+        flex-wrap: wrap
+        @include mq(tablet)
+            flex-wrap: no-wrap
+        @include mq-land(tablet)
+            flex-wrap: no-wrap
+        .interest__hobby
+            @include flex(flex-start,center, row)
+            padding: 10px 10px
+            width: 40%
+            margin: 5px 10px
+            @include mq(tablet)
+                width: auto
+            @include mq-land(tablet)
+                width: auto
+            .icon
+                @include flex(center,center,row)
+                width: 20px
+                height: 20px
+                font-size: 14px
+                color: $third-color
+            .interest__text
+                font-size: 12px
+                padding-left: 5px
+                color: $font-color
